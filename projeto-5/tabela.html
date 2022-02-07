@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova tabela</title>
+    <style>
+        header {
+            background-color: thistle;
+            margin-top: -23px;
+        }
+        body {
+            font-size: 1.1em;
+            border: 1px solid black;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            font-size:medium;
+            font-style: normal;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabela relacional</h1>
+    <caption>Esta tabela tem carater ficticio em todos os seus dados</caption>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>id funcionário</th>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Salário em R$</th>
+                <th>Área</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>CEP</th>
+                <th>Admissão</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>João Damaceno da Silva</td>
+                    <td>Auxiliar administrativo</td>
+                    <td>120000</td>
+                    <td>RH</td>
+                    <td>4169-8821</td>
+                    <td>Rua Rose nª 120</td>
+                    <td>Jardim Beuval</td>
+                    <td>Carapicuíba</td>
+                    <td>25136-122</td>
+                    <td>14/02/1996</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Barbara Ramos</td>
+                    <td>Operadora de máquina</td>
+                    <td>2.350,00</td>
+                    <td>Produção</td>
+                    <td>1251-3625</td>
+                    <td>Rua Neli nº 142</td>
+                    <td>Barro Bonito</td>
+                    <td>Osasco</td>
+                    <td>12545-415</td>
+                    <td>01/02/2002</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Boanerges Borges</td>
+                    <td>Operador de Máquina</td>
+                    <td>2.350,00</td>
+                    <td>Produção</td>
+                    <td>4644-8596</td>
+                    <td>Estrada da folha nº 10</td>
+                    <td>São Lourenço</td>
+                    <td>Itapevi</td>
+                    <td>14258-985</td>
+                    <td>07/01/2009</td>
+                </tr>
+                
+                <tr>
+                    <td>005</td>
+                    <td>Camila Vanin</td>
+                    <td>Analisya de crédito</td>
+                    <td>3.000,00</td>
+                    <td>Analise de fraude</td>
+                    <td>4152-9874</td>
+                    <td>Alameda das Acacias nº 1</td>
+                    <td>Cabreuva</td>
+                    <td>Barueri</td>
+                    <td>12548-362</td>
+                    <td>07/07/2017</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Castro Alves Reis</td>
+                    <td>Recrutamento e Seleção </td>
+                    <td>3.000,00</td>
+                    <td>RH</td>
+                    <td>5236-1478</td>
+                    <td>Rua Egidio V. nº 1245</td>
+                    <td>Indianapoles</td>
+                    <td>Cabreuva</td>
+                    <td>78459-123</td>
+                    <td>03/02/1998</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>Claudia Martins</td>
+                    <td>Diretors Regional</td>
+                    <td>40.000,00</td>
+                    <td>Administração</td>
+                    <td>5252-6363/td>
+                    <td>Rua Flores nº 122</td>
+                    <td>Barra Funda</td>
+                    <td>São Paulo</td>
+                    <td>06365-365/td>
+                    <td>04/04/1991</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>Cleônice Pereira</td>
+                    <td>Analista de Crédito</td>
+                    <td>2.200,00</td>
+                    <td>Analise e Fraude</td>
+                    <td>4512-9638</td>
+                    <td>Rua Francisca nº 45</td>
+                    <td>Vila Dirce</td>
+                    <td>Santos/td>
+                    <td>25146-584</td>
+                    <td>05/05/1988</td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td>Edson Cagliasso</td>
+                    <td>Programador Pleno</td>
+                    <td>4.000,00</td>
+                    <td>TI</td>
+                    <td>7845-9865</td>
+                    <td>Rua Lamina nº 210</td>
+                    <td>Nações Unidas</td>
+                    <td>Suzano</td>
+                    <td>23654-852</td>
+                    <td>0/06/2001</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>Edson Carlos</td>
+                    <td>Analista de Sistemas</td>
+                    <td>4.000,00</td>
+                    <td>TI</td>
+                    <td>4512-3665</td>
+                    <td>Rua das Pedras</td>
+                    <td>Lapa</td>
+                    <td>ABC</td>
+                    <td>23659-251</td>
+                    <td>07/03/2004</td>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>Edson Carneiro</td>
+                    <td>Diretor Nacional</td>
+                    <td>30.000,00</td>
+                    <td>Administração</td>
+                    <td>7485-9685</td>
+                    <td>Rua Novidade nº 2010</td>
+                    <td>Jd Tonato</td>
+                    <td>Santo André</td>
+                    <td>32165-456</td>
+                    <td>09/07/2015</td>
+                </tr>
+                <tr>
+                    <td>012</td>
+                    <td>Edson de Barros</td>
+                    <td>Diretor Regional</td>
+                    <td>25.000,00</td>
+                    <td>Administração</td>
+                    <td>4512-3975</td>
+                    <td>Estrada da Folha nº 25</td>
+                    <td>Vila Anunciata</td>
+                    <td>São Caetano</td>
+                    <td>78945-612/td>
+                    <td>01/02/1988</td>
+                </tr>
+                <tr>
+                    <td>013</td>
+                    <td>Edson de Lima</td>
+                    <td>Analista Magento</td>
+                    <td>6.000,00</td>
+                    <td>TI</td>
+                    <td>4152-9154</td>
+                    <td>Rua Amélia nº 1700</td>
+                    <td>Fazendinha</td>
+                    <td>Guaianazes</td>
+                    <td>25147-896</td>
+                    <td>01/05/1999</td>
+                </tr>
+                <tr>
+                    <td>014</td>
+                    <td>Edson Gomes</td>
+                    <td>Diretor de TI</td>
+                    <td>8.000,00</td>
+                    <td>TI</td>
+                    <td>4152-7896</td>
+                    <td>Rua Camaleão nº 45</td>
+                    <td>Granja Viana</td>
+                    <td>Itaquera</td>
+                    <td>25147-896</td>
+                    <td>02/03/2010</td>
+                </tr>
+                <tr>
+                    <td>015</td>
+                    <td>Edson Gonçalves</td>
+                    <td>Relações Públicas</td>
+                    <td>7.000,00</td>
+                    <td>Marketing</td>
+                    <td>4152-3658</td>
+                    <td>Rua Pinapoles nº 10</td>
+                    <td>alfavile</td>
+                    <td>Belém</td>
+                    <td>02514-698</td>
+                    <td>02/03/2001</td>
+                </tr>
+                <tr>
+                    <td>016</td>
+                    <td>Edson Luiz</td>
+                    <td>Diretor</td>
+                    <td>20.000,00</td>
+                    <td>Administração</td>
+                    <td>4152-9874</td>
+                    <td>Rua das Pedras nº 1720</td>
+                    <td>Green Vile</td>
+                    <td>Póa</td>
+                    <td>25648-986</td>
+                    <td>05/05/2005</td>
+                </tr>
+                <tr>
+                    <td>017</td>
+                    <td>Edson Luiz da Silva</td>
+                    <td>Diretor Internacional</td>
+                    <td>40.000,00</td>
+                    <td>Administração</td>
+                    <td>4169-8821</td>
+                    <td>Rua Ribeirão do Sul nº 11</td>
+                    <td>JD Ana Estela</td>
+                    <td>Carapicuíba/td>
+                    <td>06361-080</td>
+                    <td>06/03/2006</td>
+                </tr>
+                <tr>
+                    <td>018</td>
+                    <td>Edson Padilha</td>
+                    <td>Programador</td>
+                    <td>3.000,00</td>
+                    <td>TI</td>
+                    <td>7845-9865</td>
+                    <td>Rua Pinapoles nº 10</td>
+                    <td>Jardins</td>
+                    <td>Guaicuru</td>
+                    <td>25631-845</td>
+                    <td>07/07/2007</td>
+                </tr>
+                <tr>
+                    <td>019</td>
+                    <td>Edson Queiros</td>
+                    <td>Programador JR</td>
+                    <td>4.000,00</td>
+                    <td>TI</td>
+                    <td>7845-6598</td>
+                    <td>Rua das Pedras nº 174</td>
+                    <td>Brás</td>
+                    <td>Higienopoles</td>
+                    <td>25698-215</td>
+                    <td>05/08/2011</td>
+                </tr>
+                <tr>
+                    <td>020</td>
+                    <td>Edson Ribeiro</td>
+                    <td>Desenvolvedor</td>
+                    <td>5.200,00</td>
+                    <td>TI</td>
+                    <td>4125-3214</td>
+                    <td>Rua Limão nº 45</td>
+                    <td>Limeira</td>
+                    <td>Guaicuru</td>
+                    <td>25623-845</td>
+                    <td>09/04/2003</td>
+                </tr>
+                <tr>
+                    <td>021</td>
+                    <td>Edson Trevizane</td>
+                    <td>Programador SR</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>25369-412</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>022</td>
+                    <td>Eliete da Silva Carvalho</td>
+                    <td>Analista de Crédito</td>
+                    <td>2.200,00</td>
+                    <td>Analista e Fraude</td>
+                    <td>1205-3971</td>
+                    <td>Rua silvas Rosas nº 26</td>
+                    <td>Cabreuva</td>
+                    <td>Franco da R</td>
+                    <td>12589-326</td>
+                    <td>13/12/2009</td>
+                </tr>
+                <tr>
+                    <td>023</td>
+                    <td>Fabio Vanin</td>
+                    <td>Analista de Crédito</td>
+                    <td>2.200,00</td>
+                    <td>Analise e Fraude</td>
+                    <td>5236-4123</td>
+                    <td>Rua Leila nº 14</td>
+                    <td>Carapicuíba</td>
+                    <td>Teresopolis</td>
+                    <td>41258-965</td>
+                    <td>05/07/2002</td>
+                </tr>
+                <tr>
+                    <td>024</td>
+                    <td>Fernanda Assis</td>
+                    <td>Recrutamento e Seleção</td>
+                    <td>3.000,00</td>
+                    <td>RH</td>
+                    <td>4125-9687</td>
+                    <td>Rua Tabapoão nº 114</td>
+                    <td>Carapicuíba</td>
+                    <td>Bom Jardim</td>
+                    <td>25631-814</td>
+                    <td>10/10/2003</td>
+                </tr>
+                <tr>
+                    <td>025</td>
+                    <td>Fernanda Tais</td>
+                    <td>Analista de Crédito</td>
+                    <td>2.200,00</td>
+                    <td>Analise e Fraude</td>
+                    <td>4125-2514</td>
+                    <td>Rua das Virgens nº 118</td>
+                    <td>Vila Dirce</td>
+                    <td>Urupema</td>
+                    <td>36589-326</td>
+                    <td>02/02/2009</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Benedito Alvarez</td>
+                    <td>Faxineiro</td>
+                    <td>1.700,00</td>
+                    <td>Limpeza</td>
+                    <td>4125-3625</td>
+                    <td>Rua ananias nº 120</td>
+                    <td>Utinga</td>
+                    <td>São Paulo</td>
+                    <td>14255-632</td>
+                    <td>01/05/2003</td>
+                </tr>
+
+            </tbody>
+    </table>
+</body>
+</html>
